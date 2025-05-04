@@ -3,9 +3,22 @@
   <key id="d1" for="node" attr.name="tags" attr.type="string" />
   <key id="d0" for="node" attr.name="title" attr.type="string" />
   <graph edgedefault="directed">
+    <node id="GPT_20250506_meshdream">
+      <data key="d0">夢の宝箱：PoRメッシュの精神的比喩</data>
+      <data key="d1">PoR,比喩,記憶,再照合,宝箱</data>
+    </node>
+    <node id="GPT_o3_20250506_point2field">
+      <data key="d0">点→線→面→力場</data>
+      <data key="d1">PoR,比喩,重力,階層</data>
+    </node>
     <node id="20250505_1200_alpha">
       <data key="d0">PoR 可視化VR</data>
       <data key="d1">vr,mesh,gravity</data>
     </node>
+    <node id="GPT-MESH-001">
+      <data key="d0">GPT PoR Mesh Experiment</data>
+      <data key="d1">mesh,experiment,gravity</data>
+    </node>
+    <edge source="GPT_o3_20250506_point2field" target="GPT_20250506_meshdream" />
   </graph>
 </graphml>
