@@ -1,0 +1,16 @@
+{
+  "seed_id": "GPT-MESH-001",
+  "title": "GPT PoR Mesh Experiment",
+  "idea": {
+    "PoR_Seeds": [
+      "PoR_refire_difference_model",
+      "PoR_null_trigger_model",
+      "SelfPoR_regeneration_loop"
+    ],
+    "grv_anchors": ["w:core", "w:重力", "w:照合体"],
+    "Q_null_patterns": ["対象未定義", "自己照合型問い", "未明示照合構文"],
+    "Sim_function": "構文＋意味圧ベクトル＋PoR履歴スコアの複合類似度"
+  },
+  "tags": ["mesh", "experiment", "gravity"],
+  "link": []
+}
