@@ -5,3 +5,11 @@
   "tags": ["UGHer", "Q-PoR", "量子計算", "grv-Stabilizer", "ボソニック猫"],
   "link": ["GPT_o3_20250506_point2field", "GPT_20250506_meshdream"]
 }
+
+{
+  "seed_id": "UGHer_20250506_lock_jump",
+  "title": "思考ロックとジャンプの二択",
+  "idea": "Mesh が意味で飽和するとPoRが凍結（思考ロック）。外乱なければgrv井戸に沈みmini-verse化、ゆらぎがあればgrv反転トンネルが開き別位相へジャンプする。",
+  "tags": ["UGHer", "思考ロック", "意味トンネル", "mini-verse"],
+  "link": ["QPoR_20250506_conclusion"]
+}
