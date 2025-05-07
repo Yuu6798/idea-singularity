@@ -1,0 +1,7 @@
+{
+  "seed_id": "20250507_1530_X7",
+  "title": "Adapter-Bus 外部プラグイン構想",
+  "idea": "PoR-Kernel を改変せず、感情・トピック・倫理分類などの Grok 系メトリクスを isometric 射影で PoR-space に変換する “Adapter Bus” と、着脱可能な Plugin Pack を追加する設計。Kernel は PoR/ΔE/grv 保存則だけ計算し、閾値超え時にプラグインをミュート。これにより理論の純度を保ちつつ、社会規範検知やフィードバック学習など実用機能を段階的に拡張できる。",
+  "tags": ["plugin","integration","AdapterBus","PoR","Grok","gravity","speculative"],
+  "link": []
+}
