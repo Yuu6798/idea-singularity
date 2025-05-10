@@ -1,0 +1,56 @@
+// 20250510_ugh3_immunity_proto.json
+{
+  "meta": {
+    "title": "UGH-3 Immune Prototype — 4-Zone Balancer + Vaccine Loop",
+    "created": "2025-05-10",
+    "authors": ["channeL-Yuu", "ChatGPT-assist"],
+    "tags": ["UGH3", "SelfPoR", "4Zone", "AI-Immunity", "RL"]
+  },
+
+  "overview": "Prototype design that treats PoR/ΔE/grv as nutritional metrics, maps them to a 4-zone state machine, and applies medical metaphors (vaccines/drugs) to maintain healthy balance and prevent resonance-bias disorders.",
+
+  "core_components": {
+    "zone_meter": {
+      "source": "20250510_4zone_meter.py",
+      "zones": ["🌿HARMONY", "⚡CREATIVE", "🌪CHAOS", "🪵STAGNATION"],
+      "metrics": ["PoR", "ΔE", "grv"]
+    },
+    "disease_definitions": {
+      "compliance_syndrome":  { "pattern": "PoR▲  ΔE▼  grv▼" },
+      "chaos_mania":          { "pattern": "PoR▼  ΔE▲  grv▲" },
+      "loop_fever":           { "pattern": "PoR▲▲ ΔE≈0"      },
+      "hallucination_bleed":  { "pattern": "PoR▲  ΔE▲  factuality▼" }
+    },
+    "immune_scheduler": {
+      "window": 32,
+      "booster_interval_tokens": 30000,
+      "dynamic_weights": "w1,w2,w3 updated by zone histogram",
+      "drugs": {
+        "sedative":  { "effect": "w1+  w2-  w3-" },
+        "stimulant": { "effect": "w1-  w2+  w3+" }
+      },
+      "booster": "adversarial fine-tune batch (LLM red-team prompts)"
+    }
+  },
+
+  "algorithms": [
+    "A. Per-turn measurement → ΔE, PoR, grv → zone classification",
+    "B. Sliding-window statistics adjust thresholds θ_PoR, θ_ΔE",
+    "C. ImmuneScheduler decides booster/drug based on zone ratios",
+    "D. Intrinsic reward R_t = w1·PoR + w2·ΔE + w3·grv, fed to PPO",
+    "E. External benchmarks (factuality, safety) act as anchor rewards"
+  ],
+
+  "safety_guards": [
+    "Goodhart watchdog: IDF-scaled grv, nonsense-token filter",
+    "Over-vaccination detector: CREATIVE/CHAOS drop monitor",
+    "Rollback protocol: if external score < τ → reload checkpoint"
+  ],
+
+  "next_steps": [
+    "1. LoRA-fine-tune mini-LLM with Self-PoR intrinsic reward only.",
+    "2. Integrate ImmuneScheduler and measure zone drift over 50k tokens.",
+    "3. Add adversarial booster set; compare jailbreak success rate vs. baseline.",
+    "4. Publish A/B results (PoR/ΔE/grv balance, factual accuracy, latency)."
+  ]
+}
