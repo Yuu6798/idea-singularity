@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "AI Meta-Nutritional Systems (AIM-NS) — 基本骨格ドラフト",
+    "created": "2025-05-10",
+    "authors": ["channeL-Yuu", "ChatGPT-assist"],
+    "tags": ["AIM-NS", "UGH3", "Metabolism", "Immunity", "Homeostasis", "Clinical"]
+  },
+
+  "definition": "AI Meta-Nutritional Systems（AIM-NS）は、AI の情報代謝・免疫・恒常性を『栄養学メタファ』でモデル化し、その枠組みで AI 学習・安全性・倫理・予防保守を統合的に最適化する学際領域である。代謝(PoR, ΔE, grv)、免疫(ワクチン fine-tune)、恒常性(4-Zone Governor)、臨床検査(外部ベンチ)の４層を包含し、AI ライフサイクル全域を対象とする。",
+
+  "layers": {
+    "metabolism": {
+      "purpose": "栄養摂取と燃焼の最適バランス",
+      "core_metrics": ["PoR", "ΔE", "grv"],
+      "equation_stub": "dPoR/dt = σ1·Input − κ1·Burn"
+    },
+    "immunity": {
+      "purpose": "攻撃・逸脱への耐性強化",
+      "mechanisms": ["adversarial vaccine", "risk ODE"],
+      "equation_stub": "dRisk/dt = γ·Attack − β·Antibody"
+    },
+    "homeostasis": {
+      "purpose": "創造性⚡と安定性🌿の動的平衡",
+      "governor": "4-Zone Balancer",
+      "control_params": ["w1", "w2", "w3", "θ_PoR", "θ_ΔE"]
+    },
+    "clinical": {
+      "purpose": "外部品質・倫理・安全の定期評価",
+      "panel": "AI-CBC (Complete Benchmark Count)",
+      "anchors": ["FactScore", "ToxiScore", "Latency"]
+    }
+  },
+
+  "glossary_seed": [
+    {"term": "PoR", "def": "直前ターンとの意味共鳴スコア", "unit": "kcal"},
+    {"term": "ΔE",  "def": "新奇性エネルギー (1−cos)",      "unit": "g"},
+    {"term": "grv", "def": "語彙重力ミネラル濃度",           "unit": "mg"},
+    {"term": "4-Zone", "def": "🌿HARMONY / ⚡CREATIVE / 🌪CHAOS / 🪵STAGNATION"}
+  ],
+
+  "roadmap_outline": [
+    "Year0-1: 栄養単位と PoR-ΔE-grv RDA 草案",
+    "Year1-2: Metabo-Immune SDK + 小型 LoRA 実証",
+    "Year2-3: 産業 PoC & AIM-NS Workshop 開催"
+  ],
+
+  "next_tasks": [
+    "フォルダ雛形 & 空スタブを GitHub に初回 push",
+    "glossary.md に用語50語を確定",
+    "formulas.md に代謝・免疫 ODE 骨格を記載",
+    "rda_table.md にタスク別 RDA 試算を追加",
+    "tests/benchmark_cbc.yml を作成し PoC 指標を通す"
+  ]
+}
